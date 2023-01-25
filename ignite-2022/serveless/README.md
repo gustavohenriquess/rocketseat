@@ -32,3 +32,18 @@
 ## Framework **ServelesS**
 
 [Serveless Framework](https://www.serverless.com/pricing)
+
+## AWS
+
+### DynamoDB
+
+- NoSQL
+- Não precisa ficar criando infraestrutura, servidor, porta, segurança (tudo pela AWS)
+- Obrigatório passar um ID
+- Replica de informações por regiões
+- Performatico
+- Baixa Latência
+
+#### Docs
+
+- [Resource Types](https://docs.aws.amazon.com/config/latest/developerguide/resource-config-reference.html#amazondynamodb)
