@@ -47,3 +47,4 @@
 #### Docs
 
 - [Resource Types](https://docs.aws.amazon.com/config/latest/developerguide/resource-config-reference.html#amazondynamodb)
+- [Attribution Definitions](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_AttributeDefinition.html)
