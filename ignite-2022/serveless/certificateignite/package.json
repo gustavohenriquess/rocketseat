@@ -7,7 +7,7 @@
     "run:dev": "serverless offline",
     "dynamo:install": "serverless dynamodb install",
     "dynamo:start": "serverless dynamodb start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "serverless deploy --verbose"
   },
   "engines": {
     "node": ">=14.15.0"
