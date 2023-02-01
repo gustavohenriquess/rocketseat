@@ -12,7 +12,7 @@ const serverlessConfiguration: AWS = {
     name: "aws",
     runtime: "nodejs16.x",
     region: "us-east-1", //Região default
-    timeout: 15,
+    // timeout: 15,
     apiGateway: {
       minimumCompressionSize: 1024,
       shouldStartNameWithService: true,
