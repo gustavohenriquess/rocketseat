@@ -12,6 +12,7 @@ const serverlessConfiguration: AWS = {
     name: "aws",
     runtime: "nodejs16.x",
     region: "us-east-1", //Região default
+    timeout: 15,
     apiGateway: {
       minimumCompressionSize: 1024,
       shouldStartNameWithService: true,
@@ -67,6 +68,7 @@ const serverlessConfiguration: AWS = {
       define: { "require.resolve": undefined },
       platform: "node",
       concurrency: 10,
+      external: ["chrome-aws-lambda"],
     },
     dynamodb: {
       stages: ["dev", "local"],
