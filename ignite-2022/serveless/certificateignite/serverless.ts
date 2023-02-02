@@ -10,7 +10,7 @@ const serverlessConfiguration: AWS = {
   ],
   provider: {
     name: "aws",
-    runtime: "nodejs16.x",
+    runtime: "nodejs14.x",
     region: "us-east-1", //Região default
     // timeout: 15,
     apiGateway: {
@@ -84,7 +84,7 @@ const serverlessConfiguration: AWS = {
       minify: false,
       sourcemap: true,
       exclude: ["aws-sdk"],
-      target: "node16",
+      target: "node14",
       define: { "require.resolve": undefined },
       platform: "node",
       concurrency: 10,
