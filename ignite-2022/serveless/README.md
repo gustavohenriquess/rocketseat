@@ -29,7 +29,7 @@
 
 > Não colocar funções que serão chamadas diversas vezes ao dia
 
-## Framework **ServelesS**
+## Framework **Serveless**
 
 [Serveless Framework](https://www.serverless.com/pricing)
 
