@@ -1,5 +1,4 @@
 # Instalação do TypeScript
-
 ```
   // PARA INSTALAR
   npm init -y
@@ -13,4 +12,10 @@
   //PARA EXECUTAR
   npx tsc FILE PATH
   npx tsx SERVER_PATH
+```
+
+## Criação de Migration com knex
+```
+  // OLHAR PARA O SCRIPT KNEX NO PACKAGE
+  npm run knex -- migrate:make create-documents
 ```
