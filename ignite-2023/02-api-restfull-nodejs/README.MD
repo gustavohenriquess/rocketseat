@@ -34,3 +34,27 @@
 - [ ] o usuário só pode visualizar transações o qual ele criou
 
 # RNF
+
+
+
+
+
+
+# Testes
+
+## Unitários
+Testa exclusivamente uma unidade da sua aplicação, testa uma função que formata uma data, string, soma valores. testa a função sem contexto.
+
+## Integração
+Testa a comunicação entre 2 ou mais unidades. 
+
+## e2e
+Testes que basicamente simulam um usuário operando a aplicação.
+
+Exemplo Frontend: Abre a pagina no navegador, digita o e-mail e senha, clica no botão de login.
+Exemplo Backend: chamadas HTTP, Websockets. O teste é desde a rota até o banco de dados
+
+## Pirâmide de testes
+
+E2E (não dependem de nenhuma tecnologia, não dependem de arquitetura)
+2000 testes -> Testes e2e -> 16min
