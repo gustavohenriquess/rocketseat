@@ -29,3 +29,9 @@ Gympass style app.
 - [ ] Todas as listas de dados precisam estar paginadas com 20 itens por página.
 - [ ] O usuário deve ser identificado por um JWT (JSON Web Token).
 
+
+
+## Anotações
+
+### Arquivo .npmrc
+configura o npm para sempre salvar as dependências com exact version
