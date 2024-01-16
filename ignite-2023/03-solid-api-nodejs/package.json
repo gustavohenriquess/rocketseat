@@ -6,7 +6,14 @@
   "scripts": {
     "start:dev": "tsx watch src/server.ts",
     "start": "node build/server.js",
-    "build": "tsup src --out-dir build"
+    "build": "tsup src --out-dir build",
+    "db:create": "docker run -d --name api-solid-pg -e POSTGRESQL_USERNAME=docker -e POSTGRESQL_PASSWORD=docker -e POSTGRESQL_DATABASE=apisolid -p 5432:5432 bitnami/postgresql",
+    "docker:down": "docker compose down",
+    "docker:up": "docker compose up -d",
+    "docker:stop": "docker compose stop",
+    "docker:logs": "docker compose logs -f",
+    "prisma:generate": "npx prisma generate",
+    "prisma:migrate": "npx prisma migrate dev"
   },
   "keywords": [],
   "author": "",
@@ -15,11 +22,13 @@
     "@rocketseat/eslint-config": "1.2.0",
     "@types/node": "18.16.3",
     "eslint": "8.39.0",
+    "prisma": "4.13.0",
     "tsup": "6.7.0",
     "tsx": "3.12.7",
     "typescript": "5.0.4"
   },
   "dependencies": {
+    "@prisma/client": "4.13.0",
     "dotenv": "16.0.3",
     "fastify": "4.17.0",
     "zod": "3.21.4"

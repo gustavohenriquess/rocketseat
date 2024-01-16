@@ -35,3 +35,16 @@ Gympass style app.
 
 ### Arquivo .npmrc
 configura o npm para sempre salvar as dependências com exact version
+
+
+### Prisma
+- npm i prisma -D
+- npx prisma init
+- npx prisma generate - para gerar os arquivos de typescript (tipagem)
+
+
+### Docker
+
+```
+docker run -d --name api-solid-pg -e POSTGRESQL_USERNAME=docker -e POSTGRESQL_PASSWORD=docker -e POSTGRESQL_DATABASE=apisolid -p 5432:5432 bitnami/postgresql
+```
