@@ -13,7 +13,9 @@
     "docker:stop": "docker compose stop",
     "docker:logs": "docker compose logs -f",
     "prisma:generate": "npx prisma generate",
-    "prisma:migrate": "npx prisma migrate dev"
+    "prisma:migrate": "npx prisma migrate dev",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "keywords": [],
   "author": "",

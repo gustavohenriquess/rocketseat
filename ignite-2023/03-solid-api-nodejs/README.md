@@ -48,3 +48,14 @@ configura o npm para sempre salvar as dependências com exact version
 ```
 docker run -d --name api-solid-pg -e POSTGRESQL_USERNAME=docker -e POSTGRESQL_PASSWORD=docker -e POSTGRESQL_DATABASE=apisolid -p 5432:5432 bitnami/postgresql
 ```
+
+
+
+### In Memory test Database
+
+[Artigo do Martin Fowler](https://martinfowler.com/bliki/InMemoryTestDatabase.html)
+
+### Vantagens
+- Respesentação dos banccos de dados
+- foco dos testes em Use-Case
+- Testes executados mais rapidos
