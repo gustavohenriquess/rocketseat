@@ -3,6 +3,14 @@ import { Prisma } from '@prisma/client'
 import { CheckInsRepository } from '../check-ins-repository'
 
 export class PrismaCheckInsRepository implements CheckInsRepository {
+  async findManyByUserId(userId: string) {
+    return await prisma.checkIn.findMany({
+      where: {
+        user_id: userId,
+      },
+    })
+  }
+
   async findByUserIdOnDate(userId: string, date: Date) {
     return await prisma.checkIn.findFirst({
       where: {
