@@ -1,8 +1,26 @@
 import { prisma } from '@/lib/prisma'
-import { Prisma } from '@prisma/client'
+import { CheckIn, Prisma } from '@prisma/client'
 import { CheckInsRepository } from '../check-ins-repository'
+import dayjs from 'dayjs'
 
 export class PrismaCheckInsRepository implements CheckInsRepository {
+  async findById(id: string) {
+    return await prisma.checkIn.findUnique({
+      where: {
+        id,
+      },
+    })
+  }
+
+  async save(data: CheckIn) {
+    return await prisma.checkIn.update({
+      where: {
+        id: data.id,
+      },
+      data,
+    })
+  }
+
   async findManyByUserId(userId: string, page: number) {
     return await prisma.checkIn.findMany({
       where: {
@@ -14,12 +32,15 @@ export class PrismaCheckInsRepository implements CheckInsRepository {
   }
 
   async findByUserIdOnDate(userId: string, date: Date) {
+    const startOfTheDay = dayjs(date).startOf('date')
+    const endOfTheDay = dayjs(date).endOf('date')
+
     return await prisma.checkIn.findFirst({
       where: {
         user_id: userId,
         created_at: {
-          gte: date,
-          lt: new Date(date.getTime() + 24 * 60 * 60 * 1000),
+          gte: startOfTheDay.toDate(),
+          lte: endOfTheDay.toDate(),
         },
       },
     })
