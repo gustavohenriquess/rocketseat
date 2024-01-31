@@ -59,3 +59,6 @@ docker run -d --name api-solid-pg -e POSTGRESQL_USERNAME=docker -e POSTGRESQL_PA
 - Respesentação dos banccos de dados
 - foco dos testes em Use-Case
 - Testes executados mais rapidos
+
+## JWT
+[jwt.io](https://jwt.io/)
