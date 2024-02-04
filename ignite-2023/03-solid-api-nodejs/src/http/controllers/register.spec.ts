@@ -18,6 +18,6 @@ describe('Register - e2e', () => {
       password: 'jhon123',
     })
 
-    expect(response.status).toBe(201)
+    expect(response.statusCode).toBe(201)
   })
 })
