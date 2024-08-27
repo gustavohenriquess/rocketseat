@@ -15,7 +15,7 @@ Design dirigido à domínio
 
 ## Conceitos
 - Agregados
-- Value Objects
+- Value Objects - Propriedades que possuem uma regra de negocio (Ex: Slug em Questions)
 - Eventos de domínio
 - Subdomínios (Bounded Contexts)
 - Entidades
